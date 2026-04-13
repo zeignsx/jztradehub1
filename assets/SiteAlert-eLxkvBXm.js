@@ -1,0 +1,7 @@
+import{j as e}from"./ui-C8N5wv7e.js";import{r as s}from"./vendor-n1a7qBCw.js";import{c as t,s as a,X as l,C as n}from"./index-Dm4-GW34.js";import{T as r}from"./triangle-alert-58uXOAXz.js";
+/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=t("Info",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"M12 16v-4",key:"1dtifu"}],["path",{d:"M12 8h.01",key:"e9boi3"}]]),o=()=>{const[t,o]=s.useState(null),[c,m]=s.useState(!1);s.useEffect(()=>{d()},[]);const d=async()=>{const{data:e}=await a.from("app_settings").select("value").eq("key","site_alert").maybeSingle();(null==e?void 0:e.value)&&o(e.value)};if(!(null==t?void 0:t.enabled)||!(null==t?void 0:t.message)||c)return null;const u={info:i,warning:r,success:n}[t.type];return e.jsx("div",{className:`border-b ${{info:"bg-blue-500/10 border-blue-500/30 text-blue-600",warning:"bg-yellow-500/10 border-yellow-500/30 text-yellow-600",success:"bg-green-500/10 border-green-500/30 text-green-600"}[t.type]}`,children:e.jsxs("div",{className:"container px-4 py-3 flex items-center justify-between gap-4",children:[e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx(u,{className:"w-5 h-5 flex-shrink-0"}),e.jsx("p",{className:"text-sm font-medium",children:t.message})]}),e.jsx("button",{onClick:()=>m(!0),className:"p-1 hover:opacity-70 transition-opacity",children:e.jsx(l,{className:"w-4 h-4"})})]})})};export{o as default};
